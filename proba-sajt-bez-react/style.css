@@ -1,0 +1,147 @@
+:root {
+  --primary: #2270b5;
+  --secondary: #f07720;
+  --accents: #b2c226;
+  --text: #333;
+  --white: white;
+  --gray: gray;
+  --font: 16px;
+  --transition: 0.3s linear;
+}
+
+/* basic styles */
+
+body {
+  font-size: var(--font);
+  color: var(--text);
+}
+
+a {
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+
+
+.button {
+    background-color: var(--accents);
+    padding: 10px 30px;
+    color: var(--text);
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.button:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+/* top bar */
+
+.topbar {
+  font-size: 0.9rem;
+}
+
+.topbar a {
+  color: var(--accents);
+}
+
+.topbar a:hover {
+  color: var(--primary);
+}
+
+/* navbar */
+
+.navbar-brand img {
+  width: 80px;
+}
+
+nav {
+  border-bottom: 5px solid var(--accents);
+}
+
+/* slider */
+
+.carousel-caption {
+  bottom: 6rem;
+}
+
+.carousel-item h2 span {
+  color: var(--accents);
+}
+
+.carousel-item h2  {
+    line-height: 1;
+}
+
+/* Products */
+
+.products h5:last-child {
+  color: var(--accents);
+}
+
+.holder {
+  overflow: hidden;
+}
+
+.products img {
+  transition: var(--transition);
+}
+
+.products img:hover {
+  transform: scale(1.1) rotate(2deg);
+}
+
+/* i element */
+i {
+  color: var(--accents);
+  text-shadow: 0 0 1px var(--text);
+  font-size: 2rem;
+}
+
+.about .border-dark {
+  transition: var(--transition);
+}
+
+.about .border-dark:hover {
+  background: var(--text);
+  color: white;
+}
+
+/* discoverOff */
+
+.discoverOff {
+  background-image: url(img/shop.jpg);
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+
+}
+
+/* footer */
+
+footer a {
+  color: var(--accents);
+  font-weight: lighter;
+}
+
+footer a:hover {
+  color: var(--white);
+}
+
+/* single */
+
+.price h5 {
+  color: var(--accents);
+}
+
+/* Responsive */
+
+@media(max-widt: 760px) {
+  .topbar {
+    display: none;
+  }
+  .products .col-md-4 {
+    margin-bottom: 25px;
+  }
+}
